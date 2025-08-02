@@ -16,7 +16,7 @@ app = FastAPI(title="Book Tracker API", version="1.0.0")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # adjust for prod
+    allow_origins=["http://localhost:3000", "https://keenify-frontend.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
